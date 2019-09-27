@@ -1,9 +1,8 @@
 import { Entity, PrimaryGeneratedColumn, Column } from "typeorm";
 import { IsEmail, Min } from "class-validator";
-import { User } from "src/user/models/user";
 
 @Entity()
-export class UserEntity implements User {
+export class User {
   
   @PrimaryGeneratedColumn('uuid')
   id: string;
