@@ -1,0 +1,10 @@
+{
+  "type": "sqlite",
+  "username": "root",
+  "password": "root",
+  "database": "cmail",
+  "entities": [
+    "src/**/*.entity{.ts,.js}"
+  ],
+  "synchronize": true
+}
