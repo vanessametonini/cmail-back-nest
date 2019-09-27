@@ -16,9 +16,9 @@ export class UserService {
     return await this.userRepository.find();
   }
 
-  create(userInput: UserInputDTO): User {
+  async create(userInput: UserInputDTO): Promise<User> {
     const userEntity = { ...userInput, ...{ email: `${userInput.username}@cmail.br`}};
-    return this.userRepository.create(userEntity);
+    return await this.userRepository.save(userEntity);
   }
 
 }

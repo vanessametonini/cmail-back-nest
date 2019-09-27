@@ -1,8 +1,6 @@
 {
   "type": "sqlite",
-  "username": "root",
-  "password": "root",
-  "database": "cmail.sqlite",
+  "database": "cmail.db",
   "entities": [
     "src/**/*.entity{.ts,.js}"
   ],
